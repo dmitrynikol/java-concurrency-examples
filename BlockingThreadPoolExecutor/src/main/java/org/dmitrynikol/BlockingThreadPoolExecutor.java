@@ -23,7 +23,7 @@ public class BlockingThreadPoolExecutor extends ThreadPoolExecutor {
    
     public BlockingThreadPoolExecutor() {
         this(1, 1, Integer.MAX_VALUE, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(), 
-        		new PriorityThreadFactory("testthread"));
+        		new PriorityThreadFactory("testThread"));
     }
     
     public BlockingThreadPoolExecutor(int corePoolSize, int maxPoolSize, int queueCapacity, 
